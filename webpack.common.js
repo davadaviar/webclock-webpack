@@ -8,17 +8,6 @@ module.exports = {
         filename: 'bundle.js'
     },
 
-    mode: 'production',
-
-    devServer: {
-        client: {
-            overlay: {
-                errors: true,
-                warnings: false
-            }
-        }
-    },
-
     module: {
         rules: [
             {
@@ -30,20 +19,6 @@ module.exports = {
 
                     {
                         loader: 'css-loader'
-                    }
-
-                ]
-            },
-
-            {
-                test: /\.js$/,
-                exclude: /node_modules/,
-                use: [
-                    {
-                        loader:'babel-loader',
-                        options: {
-                            presets: ['@babel/preset-env']
-                        }
                     }
                 ]
             }
