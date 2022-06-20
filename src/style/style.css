@@ -1,7 +1,7 @@
 .clock {
     width: 70%;
     padding: 30px 50px;
-    background-color: black;
+    background-color: blue;
     display: flex;
     flex-direction: column;
     color: white;

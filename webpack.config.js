@@ -10,6 +10,15 @@ module.exports = {
 
     mode: 'production',
 
+    devServer: {
+        client: {
+            overlay: {
+                errors: true,
+                warnings: false
+            }
+        }
+    },
+
     module: {
         rules: [
             {
